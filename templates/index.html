@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Insurance Cost Predictor</title>
+
+</head>
+<body>
+    <div style="color:black;" class="container">
+        <h2 class='container-heading'><span class="heading_font">Medical Insurance Cost Predictor</span></h2>
+    </div>
+
+    <div style="color:black;" class="ml-container">
+        <form action="{{ url_for('predict') }}" method="POST">
+            <br>
+            <br>
+            <h3>Enter your age</h3>
+            <input id="first" name="age" placeholder="in year" required="required">
+            <br>
+            <h3>Enter you sex</h3>
+            <select id="second" class="form-input align-center" name="sex">
+                <option value="None">Sex</option>
+                <option value="sex_male">Male</option>
+                <option value="sex_female">Female</option>
+            </select>
+            <br>
+            <h3>Are you a smoker</h3>
+            <select id="third" class="form-input align-center" name="smoker">
+                <option value="None">Smoker</option>
+                <option value="smoker_yes">Yes</option>
+                <option value="smoker_no">No</option>
+            </select>
+            <br>
+            <h3>Enter your Body Mass Index(BMI)</h3>
+            <input id="fourth" name="bmi" placeholder="bmi" required="required">
+            <br>
+            <h3>Enter number of children you have.</h3>
+            <input id="fifth" name="children" placeholder="0, 1, 2, 3, 4, 5" required="required">
+            <br>
+            <h3>Enter the region you live.</h3>
+            <select id="sixth" class="form-input align-center" name="region">
+                <option value="None">Region</option>
+                <option value="region_northwest">North-West</option>
+                <option value="region_southeast">South-East</option>
+                <option value="region_southwest">South-West</option>
+                <option value="region_northeast">North-East</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <button id="sub" type="submit ">Submit</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class='footer-description'>©2021 Raj Gupta</p>
+
+        </form>
+    </div>
+
+
+
+
+<style>
+
+/* Background Image */
+body
+{
+background-image:url("https://i.ibb.co/fYJYJ9M/white-trianglify-b79c7e1f.jpg");
+height: 100%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+/* Color */
+body{
+	font-family: Arial, georgia,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* Heading Font */
+.container-heading{
+    margin: 0;
+}
+
+.heading_font{
+    color: #black;
+	font-family: 'georgia', cursive;
+	font-size: 50px;
+	font-weight: normal;
+}
+
+
+
+/* Box */
+        #first{
+            height: 50px;
+            width: 200px;
+            font-size: 25px;
+            text-align: center;
+            border-radius: 0%;
+            border: 7px solid #555555;
+        }
+
+        #second {
+           height: 50px;
+            width: 200px;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 0%;
+            border: 7px solid #555555;
+        }
+
+        #third {
+            height: 50px;
+            width: 200px;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 0%;
+            border: 7px solid #555555;
+        }
+
+        #fourth {
+            height: 50px;
+            width: 200px;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 0%;
+            border: 7px solid #555555;
+        }
+
+        #fifth {
+           height: 50px;
+            width: 200px;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 0%;
+            border: 7px solid #555555;
+        }
+
+        #sixth {
+           height: 50px;
+            width: 200px;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 0%;
+            border: 7px solid #555555;
+        }
+
+
+
+/* Submit Button */
+#sub {
+            height: 50px;
+            width: 200px;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 0%;
+            border: 7px solid #f44336;
+        }
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</style>
+
+
+</body>
+
+</html>
+
+
